@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7B8C502-B966-4F66-9246-7F9BA6FDA666}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAYT.Model</RootNamespace>
+    <AssemblyName>DAYT.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAYTPlatform\CatalogContext.cs" />
+    <Compile Include="DAYTPlatform\Logistics_Company.cs" />
+    <Compile Include="DAYTPlatform\Logistics_Order.cs" />
+    <Compile Include="DAYTPlatform\Shop_Product.cs" />
+    <Compile Include="DAYTPlatform\Shop_ProductClassRatio.cs" />
+    <Compile Include="DAYTPlatform\Shop_ProductPriceRatio.cs" />
+    <Compile Include="DAYTPlatform\Shop_ProductSKUPrice.cs" />
+    <Compile Include="DAYTPlatform\Shop_ProductSKUPropertyValue.cs" />
+    <Compile Include="DAYTPlatform\Shop_ProPropertyValueNexus.cs" />
+    <Compile Include="DAYTPlatform\sysdiagrams.cs" />
+    <Compile Include="DAYTPlatform\SYS_AdminPermissions.cs" />
+    <Compile Include="DAYTPlatform\SYS_AdminRole.cs" />
+    <Compile Include="DAYTPlatform\SYS_AdminUser.cs" />
+    <Compile Include="DAYTPlatform\SYS_Area.cs" />
+    <Compile Include="DAYTPlatform\SYS_AreaMapping.cs" />
+    <Compile Include="DAYTPlatform\SYS_AreaRegion.cs" />
+    <Compile Include="DAYTPlatform\SYS_Brand.cs" />
+    <Compile Include="DAYTPlatform\SYS_Dictionary.cs" />
+    <Compile Include="DAYTPlatform\SYS_Menu.cs" />
+    <Compile Include="DAYTPlatform\SYS_ScheduleTask.cs" />
+    <Compile Include="DAYTPlatform\SYS_SendHistory.cs" />
+    <Compile Include="DAYTPlatform\SYS_Template.cs" />
+    <Compile Include="DAYTPlatform\SYS_Units.cs" />
+    <Compile Include="DAYTPlatform\TOP_Account.cs" />
+    <Compile Include="DAYTPlatform\TOP_Activity.cs" />
+    <Compile Include="DAYTPlatform\TOP_Advertising.cs" />
+    <Compile Include="DAYTPlatform\TOP_Article.cs" />
+    <Compile Include="DAYTPlatform\TOP_AuthAccount.cs" />
+    <Compile Include="DAYTPlatform\TOP_BankCard.cs" />
+    <Compile Include="DAYTPlatform\TOP_Banner.cs" />
+    <Compile Include="DAYTPlatform\TOP_BoutiqueShop.cs" />
+    <Compile Include="DAYTPlatform\TOP_Collect.cs" />
+    <Compile Include="DAYTPlatform\TOP_CompanyInfo.cs" />
+    <Compile Include="DAYTPlatform\TOP_Coupon.cs" />
+    <Compile Include="DAYTPlatform\TOP_DeliverAddress.cs" />
+    <Compile Include="DAYTPlatform\TOP_Distribution.cs" />
+    <Compile Include="DAYTPlatform\TOP_DistributionBill.cs" />
+    <Compile Include="DAYTPlatform\TOP_Footmark.cs" />
+    <Compile Include="DAYTPlatform\TOP_HotSaleCommodity.cs" />
+    <Compile Include="DAYTPlatform\TOP_HotSaleProduct.cs" />
+    <Compile Include="DAYTPlatform\TOP_JoinCooperation.cs" />
+    <Compile Include="DAYTPlatform\TOP_Member.cs" />
+    <Compile Include="DAYTPlatform\TOP_MemberCoupons.cs" />
+    <Compile Include="DAYTPlatform\TOP_MemberCouponsHistory.cs" />
+    <Compile Include="DAYTPlatform\TOP_MemberGroup.cs" />
+    <Compile Include="DAYTPlatform\TOP_MemberGroupMapping.cs" />
+    <Compile Include="DAYTPlatform\TOP_MemberGuidehHistory.cs" />
+    <Compile Include="DAYTPlatform\TOP_MemberInvoice.cs" />
+    <Compile Include="DAYTPlatform\TOP_Menu.cs" />
+    <Compile Include="DAYTPlatform\TOP_Message.cs" />
+    <Compile Include="DAYTPlatform\TOP_MessageGroupMapping.cs" />
+    <Compile Include="DAYTPlatform\TOP_MessageSend.cs" />
+    <Compile Include="DAYTPlatform\TOP_Needs.cs" />
+    <Compile Include="DAYTPlatform\TOP_NeedsFile.cs" />
+    <Compile Include="DAYTPlatform\TOP_OldUser.cs" />
+    <Compile Include="DAYTPlatform\TOP_OperationActivity.cs" />
+    <Compile Include="DAYTPlatform\TOP_Order.cs" />
+    <Compile Include="DAYTPlatform\TOP_OrderForOA.cs" />
+    <Compile Include="DAYTPlatform\TOP_PayOrder.cs" />
+    <Compile Include="DAYTPlatform\TOP_PersonalInfo.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProClass.cs" />
+    <Compile Include="DAYTPlatform\TOP_Product.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProductImages.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProductSKUProperty.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProductSKUPropertyValue.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProProperty.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProPropertyNexus.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProPropertyValue.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProPropertyValueNexus.cs" />
+    <Compile Include="DAYTPlatform\TOP_ProStandard.cs" />
+    <Compile Include="DAYTPlatform\TOP_RecommendProduct.cs" />
+    <Compile Include="DAYTPlatform\TOP_RefundOrder.cs" />
+    <Compile Include="DAYTPlatform\TOP_Shop.cs" />
+    <Compile Include="DAYTPlatform\TOP_ShopCSInfo.cs" />
+    <Compile Include="DAYTPlatform\TOP_ShoppingCart.cs" />
+    <Compile Include="DAYTPlatform\TOP_ShopProductClass.cs" />
+    <Compile Include="DAYTPlatform\TOP_ShopUser.cs" />
+    <Compile Include="DAYTPlatform\TOP_SKUProperty.cs" />
+    <Compile Include="DAYTPlatform\TOP_SplitBill.cs" />
+    <Compile Include="DAYTPlatform\TOP_SubCoupon.cs" />
+    <Compile Include="DAYTPlatform\TOP_SubOrder.cs" />
+    <Compile Include="DAYTPlatform\TOP_SubOrderForOA.cs" />
+    <Compile Include="DAYTPlatform\TOP_SubOrderImages.cs" />
+    <Compile Include="DAYTPlatform\TOP_SysMessage.cs" />
+    <Compile Include="DAYTPlatform\TOP_TLPayOrderApply.cs" />
+    <Compile Include="DAYTPlatform\TOP_TradeFrozen.cs" />
+    <Compile Include="DAYTPlatform\TOP_TradeRecord.cs" />
+    <Compile Include="PageResult.cs" />
+    <Compile Include="PersonalInfoModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplitBillPageResult.cs" />
+    <Compile Include="SqlHelp\IRepository.cs" />
+    <Compile Include="SqlHelp\Repository.cs" />
+    <Compile Include="SYS_SendHistory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

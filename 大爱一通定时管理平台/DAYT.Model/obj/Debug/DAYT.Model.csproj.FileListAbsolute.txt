@@ -1,0 +1,16 @@
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\DAYT.Model.dll.config
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\DAYT.Model.dll
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\DAYT.Model.pdb
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\EntityFramework.dll
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\Newtonsoft.Json.dll
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\EntityFramework.xml
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\Newtonsoft.Json.xml
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\大爱一通定时管理平台\DAYT.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\大爱一通定时管理平台\DAYT.Model\obj\Debug\DAYT.Model.csprojAssemblyReference.cache
+D:\大爱一通定时管理平台\DAYT.Model\obj\Debug\DAYT.Model.csproj.CoreCompileInputs.cache
+D:\大爱一通定时管理平台\DAYT.Model\obj\Debug\DAYT.Model.csproj.CopyComplete
+D:\大爱一通定时管理平台\DAYT.Model\obj\Debug\DAYT.Model.dll
+D:\大爱一通定时管理平台\DAYT.Model\obj\Debug\DAYT.Model.pdb

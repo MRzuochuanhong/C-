@@ -1,0 +1,74 @@
+﻿
+@model IEnumerable<DAYT.Model.DAYTPlatform.SYS_ScheduleTask>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>定时任务名称</th>
+                <th>反射地址</th>
+                <th>间隔时间</th>
+                <th>是否执行</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{int i = 0; }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Type</td>
+                    <td>@item.Seconds</td>
+                    <td>@item.Enabled</td>
+                    <td>
+                    <a id="start-@i" onclick="Switch('1','@item.Name',@i)" style="@if (item.Switch) { <text>display:block;</text> } else {<text>display:none;</text> } ">启动</a>
+                    <a id="stop-@i" onclick="Switch('0','@item.Name',@i)" style="@if (!item.Switch) { <text>display:block;</text> }else {<text>display:none;</text> } ">暂停</a>
+                    </td>
+                </tr>
+                i++;
+            }
+                
+            </tbody>
+    </table>
+</body>
+</html>
+<script>
+    function Switch(falg, name, i) {        
+        var url = "";
+        if (falg == "1") {
+            url ="/Home/Start"
+        }
+        else {
+            url = "/Home/Stop";
+        }
+        $.ajax({
+            type: "GET",
+            url: url + "?name=" + name,
+            success: function (result) {
+                if (falg == "1") {
+                    $("#start-" + i).css("display", "none");
+                    $("#stop-" + i).css("display", "block");
+                }
+                else {
+                    $("#start-" + i).css("display", "block");
+                    $("#stop-" + i).css("display", "none");
+                }
+                alert(result);
+            }
+        });
+    }    
+</script>
